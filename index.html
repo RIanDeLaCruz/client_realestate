@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<title>Real Estate</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+                  
+		<script type="text/javascript" src="js/jquery-2.1.4.js"></script>
+		<!-- <script type="text/javascript" src="js/main.js"></script> -->
+
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<header>
+			<nav class="clearfix">
+				<a href="index.html" id="logo"><img src="img/contactpic.png" height="50" width="100"></a>
+				<a href="#links" id="pull">MENU</a>
+			    <ul class="clearfix" id="links">
+			        <li><a href="projects.html"><span>Projects</span></a></li>
+			        <li><a href="multi-card.html"><span>About Us</span></a></li>
+			        <li><a href="multi-card.html"><span>Contact Us</span></a></li>
+			    </ul>
+			</nav>
+		</header>
+		<main>
+			<div class="header_div">
+				<img src="img/img1.jpg" width="100%" height="100%">
+			</div>
+			<div class="blocks">
+				<h1 style="text-align: center;">Projects</h1>
+				<div class="block" style="background: url('img/img1.jpg') center; background-size: cover;">
+					<div class="block__content">Area 1</div>
+				</div>
+				<div class="block" style="background: url('img/img1.jpg') center; background-size: cover;">
+					<div class="block__content">Area 1</div>
+				</div>
+				<div class="block" style="background: url('img/img1.jpg') center; background-size: cover;">
+					<div class="block__content">Area 1</div>
+				</div>
+				<div class="block" style="background: url('img/img1.jpg') center; background-size: cover;">
+					<div class="block__content">Area 1</div>
+				</div>
+				<h2 style="text-align: center;">See More</h2>
+			</div>
+			<div class="news">
+				<div class="featured">
+					<h2>Featured Articles</h2>
+					<article>
+						<h2>Article 1</h2>
+						<img src="img/img1.jpg" width="80%" height="auto">
+						<p>Lorem Ipsum dolor....</p>
+						<a href="#">Read More &gt;</a>
+					</article>
+					<article>
+						<h2>Article 1</h2>
+						<img src="img/img1.jpg" width="80%" height="auto">
+						<p>Lorem Ipsum dolor....</p>
+						<a href="#">Read More &gt;</a>
+					</article>
+					<article>
+						<h2>Article 1</h2>
+						<img src="img/img1.jpg" width="80%" height="auto">
+						<p>Lorem Ipsum dolor....</p>
+						<a href="#">Read More &gt;</a>
+					</article>
+				</div>
+				<div class="recent">
+					<h2>Recent Events</h2>
+					<article>
+						<h2>Article 1</h2>
+						<img src="img/img1.jpg" width="80%" height="auto">
+						<p>Lorem Ipsum dolor....</p>
+						<a href="#">Read More &gt;</a>
+					</article>
+					<article>
+						<h2>Article 1</h2>
+						<img src="img/img1.jpg" width="80%" height="auto">
+						<p>Lorem Ipsum dolor....</p>
+						<a href="#">Read More &gt;</a>
+					</article>
+					<article>
+						<h2>Article 1</h2>
+						<img src="img/img1.jpg" width="80%" height="auto">
+						<p>Lorem Ipsum dolor....</p>
+						<a href="#">Read More &gt;</a>
+					</article>
+				</div>
+				<div class="developments">
+					<h2>Developments</h2>
+					<article>
+						<h2>Article 1</h2>
+						<img src="img/img1.jpg" width="80%" height="auto">
+						<p>Lorem Ipsum dolor....</p>
+						<a href="#">Read More &gt;</a>
+					</article>
+				</div>
+			</div>
+		</main>
+		<footer>
+			(c)2015
+		</footer>
+		
+		<script type="text/javascript">
+			$(function() {
+			    var pull        = $('#pull');
+			        menu        = $('nav ul');
+			        menuHeight  = menu.height();
+			 
+			    $(pull).on('click', function(e) {
+			        e.preventDefault();
+			        console.log("hello");
+			        menu.slideToggle();
+			    });
+			});
+			$(window).resize(function(){
+			    var w = $(window).width();
+			    if(w > 320 && menu.is(':hidden')) {
+			        menu.removeAttr('style');
+			    }
+			}); 
+		</script>
+	</body>
+</html>-
